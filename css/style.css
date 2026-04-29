@@ -1,0 +1,728 @@
+/* 🔹 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🔹 GLOBAL BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff9eb5;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #ff6f91;
+  transform: scale(1.05);
+}
+
+/* 🔹 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #ff6f91;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ff6f91;
+}
+
+/* 🔹 HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: linear-gradient(to right, #ffe4ec, #fff);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #ff4f7a;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-img img {
+  width: 400px;
+  border-radius: 20px;
+}
+
+/* 🔹 SERVICES */
+.services {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  color: #ff4f7a;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+
+/* 🔹 WHY SECTION */
+.why {
+  padding: 70px 10%;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.why h2 {
+  color: #ff4f7a;
+  margin-bottom: 20px;
+}
+
+.why-box p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* 🔹 CTA */
+.cta {
+  padding: 60px 10%;
+  text-align: center;
+  background: linear-gradient(to right, #ff9eb5, #ff6f91);
+  color: white;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* 🔹 FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  color: #777;
+}
+
+/* 🔹 ABOUT PAGE */
+.about {
+  padding: 80px 10%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text h1 {
+  color: #ff4f7a;
+  margin-bottom: 15px;
+}
+
+.about-img img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* 🔹 MISSION */
+.mission {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff0f5;
+}
+
+.mission h2 {
+  color: #ff4f7a;
+  margin-bottom: 15px;
+}
+
+/* 🔹 TEAM */
+.team {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.team-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.member h3 {
+  color: #ff6f91;
+}
+
+/* 🔹 SERVICES PAGE */
+.services-page {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.pricing {
+  padding: 60px 10%;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-card h2 {
+  color: #ff6f91;
+}
+
+.price-card h3 {
+  margin: 10px 0;
+}
+
+.price-card ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.price-card ul li {
+  margin: 5px 0;
+}
+
+.popular {
+  border: 2px solid #ff6f91;
+}
+
+
+
+
+
+/* 🔹 PORTFOLIO HEADER */
+.portfolio-header {
+  padding: 60px 10%;
+  text-align: center;
+  background: linear-gradient(to right, #ffe4ec, #fff);
+}
+
+.portfolio-header h1 {
+  color: #ff4f7a;
+  font-size: 34px;
+}
+
+.portfolio-header p {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* 🔹 PORTFOLIO GRID */
+.portfolio {
+  padding: 70px 10%;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* 🔹 PORTFOLIO CARD */
+.portfolio-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.4s;
+  position: relative;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portfolio-card h3 {
+  color: #ff6f91;
+  margin: 15px;
+}
+
+.portfolio-card p {
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+.portfolio-card .btn {
+  margin: 0 15px 20px;
+  display: inline-block;
+}
+
+/* 🔥 HOVER EFFECT */
+.portfolio-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 105, 135, 0.2);
+}
+
+/* 🔹 CONTACT HEADER */
+.contact-header {
+  padding: 60px 10%;
+  text-align: center;
+  background: linear-gradient(to right, #ffe4ec, #fff);
+}
+
+.contact-header h1 {
+  color: #ff4f7a;
+}
+
+.contact-header p {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* 🔹 CONTACT INFO */
+.contact-info {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* 🔹 PAYMENT SECTION */
+.payment {
+  padding: 60px 10%;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.payment h2 {
+  color: #ff4f7a;
+  margin-bottom: 30px;
+}
+
+.payment-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pay-method {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.pay-method:hover {
+  transform: translateY(-8px);
+}
+
+.pay-method h3 {
+  color: #ff6f91;
+  margin-bottom: 15px;
+}
+
+/* 🔹 QR IMAGE */
+.qr {
+  width: 180px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 2px dashed #ff9eb5;
+  padding: 10px;
+}
+
+/* 🔹 FEEDBACK FORM */
+.feedback {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.feedback h2 {
+  color: #ff4f7a;
+  margin-bottom: 20px;
+}
+
+.feedback form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+  border-color: #ff6f91;
+  box-shadow: 0 0 5px rgba(255, 105, 135, 0.3);
+}
+
+/* 🔹 POLICIES */
+.policies {
+  padding: 60px 10%;
+  background: #fff0f5;
+}
+
+.policies h2 {
+  text-align: center;
+  color: #ff4f7a;
+  margin-bottom: 30px;
+}
+
+.policy-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.policy-box h3 {
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+
+/* 🔥 EXTRA INTERACTIONS */
+
+/* Smooth hover for all cards */
+.card:hover,
+.price-card:hover,
+.member:hover {
+  box-shadow: 0 10px 25px rgba(255, 105, 135, 0.15);
+}
+
+/* Button click feel */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* 🔹 SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff9eb5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe4ec;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+}
+
+
+/* 🔹 GLOBAL SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 SECTION SPACING IMPROVEMENT */
+section {
+  margin-bottom: 40px;
+}
+
+/* 🔹 GLASS EFFECT (PREMIUM LOOK) */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* 🔹 HERO IMAGE ANIMATION */
+.hero-img img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🔹 FADE IN ANIMATION (fallback if AOS fails) */
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 🔹 CARD GLOW EFFECT */
+.card:hover,
+.price-card:hover,
+.portfolio-card:hover {
+  box-shadow: 0 15px 40px rgba(255, 105, 135, 0.25);
+}
+
+/* 🔹 BUTTON GLOW */
+.btn {
+  box-shadow: 0 5px 15px rgba(255, 105, 135, 0.2);
+}
+
+.btn:hover {
+  box-shadow: 0 10px 25px rgba(255, 105, 135, 0.4);
+}
+
+/* 🔹 IMAGE HOVER ZOOM */
+.portfolio-card img {
+  transition: 0.4s;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+/* 🔹 TEXT GRADIENT EFFECT */
+.hero-text h1,
+.services h2,
+.why h2,
+.cta h2 {
+  color: #ff4f7a; /* fallback */
+
+  background: linear-gradient(to right, #ff6f91, #ff9eb5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🔹 NAV LINK UNDERLINE ANIMATION */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #ff6f91;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* 🔹 FORM BUTTON FULL WIDTH */
+.feedback button {
+  width: 100%;
+}
+
+/* 🔹 INPUT HOVER EFFECT */
+.feedback input:hover,
+.feedback textarea:hover {
+  border-color: #ff9eb5;
+}
+
+/* 🔹 POLICY BOX HOVER */
+.policy-box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* 🔹 FOOTER STYLE UPGRADE */
+footer {
+  background: linear-gradient(to right, #ffe4ec, #fff);
+  font-size: 14px;
+}
+
+/* 🔹 MOBILE NAV PREP (for JS later) */
+.navbar.active .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* 🔹 SMALL SCREEN FIXES */
+@media (max-width: 500px) {
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .services h2,
+  .portfolio-header h1,
+  .contact-header h1 {
+    font-size: 26px;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+
+  .portfolio-card img {
+    height: 150px;
+  }
+
+}
+
+/* 🔹 EXTRA MICRO-INTERACTIONS */
+
+/* Smooth card entry */
+.card,
+.price-card,
+.portfolio-card {
+  transition: all 0.3s ease;
+}
+
+/* Slight zoom on section hover (subtle premium feel) */
+section:hover {
+  transition: 0.3s;
+}
+
+/* Highlight active nav */
+.nav-links .active {
+  font-weight: 700;
+}
+
+/* 🔹 LOADING FEEL (OPTIONAL FUTURE) */
+body {
+  animation: fadeIn 0.8s ease-in;
+}
+
+
