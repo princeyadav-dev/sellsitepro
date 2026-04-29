@@ -614,7 +614,7 @@ section {
 .services h2,
 .why h2,
 .cta h2 {
-  color: #ff4f7a; /* fallback */
+  color: #e6a6b6; /* fallback */
 
   background: linear-gradient(to right, #ff6f91, #ff9eb5);
   background-clip: text;
